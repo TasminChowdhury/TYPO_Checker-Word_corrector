@@ -1,8 +1,4 @@
 
-# coding: utf-8
-
-# In[15]:
-
 import math
 import operator
 import pandas as pd 
@@ -64,9 +60,6 @@ def run_viterbi(observations,states,start,transition,emission):
             best_path[t-1] = viterbi[:,t-1].argmax()
         #print(best_path)
         return best_path
-
-
-# In[16]:
 
 #Author Tasmin Chowdhury
 
@@ -197,15 +190,5 @@ def main():
                     }
     
     build_matrix(text,corrupt_matrix)
-main()
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
+if __name__ == '__main__':
+    main()
